@@ -1,0 +1,178 @@
+/* === BENEFITS PAGE === */
+
+.header {
+  background: linear-gradient(135deg, var(--imperial-purple-dark), var(--imperial-purple));
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.headerContent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.tag {
+  color: var(--gold);
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.header h1 {
+  color: var(--marble);
+  margin-bottom: 1rem;
+}
+
+.headerSub {
+  color: var(--marble);
+  opacity: 0.85;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Comparison Table */
+.tableWrap {
+  overflow-x: auto;
+}
+
+.compTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.compTable th {
+  background: var(--imperial-purple-dark);
+  color: var(--gold);
+  padding: 1rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.colMacedon {
+  width: 30%;
+}
+
+.colRome {
+  width: 30%;
+}
+
+.compTable td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gold-light);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.compTable tr:nth-child(even) {
+  background: var(--parchment);
+}
+
+.compTable tr:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.catCell {
+  width: 25%;
+}
+
+.catCell strong {
+  display: block;
+  color: var(--imperial-purple);
+  font-variant: small-caps;
+  font-size: 1rem;
+}
+
+.catNote {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--muted-text);
+  line-height: 1.4;
+}
+
+/* Reviews */
+.reviewGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.reviewCard {
+  background: white;
+  border: 1px solid var(--gold-light);
+  padding: 2rem;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.reviewRating {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.ratingNum {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--imperial-purple);
+}
+
+.ratingStars {
+  color: var(--gold);
+  font-size: 1.1rem;
+}
+
+.reviewCard h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.reviewSection {
+  margin-bottom: 0.8rem;
+}
+
+.reviewSection p {
+  font-size: 0.9rem;
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+.prosLabel {
+  color: green;
+  font-size: 0.85rem;
+}
+
+.consLabel {
+  color: var(--blood-red);
+  font-size: 0.85rem;
+}
+
+.reviewDisclaimer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .compTable {
+    font-size: 0.82rem;
+  }
+
+  .compTable th,
+  .compTable td {
+    padding: 0.6rem;
+  }
+
+  .reviewGrid {
+    grid-template-columns: 1fr;
+  }
+}

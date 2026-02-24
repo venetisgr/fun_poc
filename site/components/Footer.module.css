@@ -1,0 +1,105 @@
+.footer {
+  background: var(--imperial-purple-dark);
+  color: var(--marble);
+  padding: 3rem 0 1.5rem;
+  border-top: 3px solid var(--gold);
+  margin-top: auto;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.col h4 {
+  font-variant: small-caps;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.col p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.col ul {
+  list-style: none;
+}
+
+.col ul li {
+  margin-bottom: 0.4rem;
+}
+
+.col ul li a,
+.col ul li span {
+  color: var(--marble);
+  font-size: 0.85rem;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+
+.col ul li a:hover {
+  opacity: 1;
+  color: var(--gold);
+}
+
+.col ul li span {
+  cursor: default;
+}
+
+.small {
+  font-size: 0.75rem !important;
+  opacity: 0.6 !important;
+  margin-top: 0.5rem;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 1.5rem 0;
+}
+
+.bottom {
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.disclaimer {
+  margin-top: 0.8rem;
+  font-size: 0.7rem !important;
+  opacity: 0.5 !important;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+}

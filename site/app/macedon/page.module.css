@@ -1,0 +1,166 @@
+/* === MACEDON PAGE === */
+
+.header {
+  background: linear-gradient(135deg, var(--imperial-purple-dark), var(--gold) 200%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.headerContent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.tag {
+  color: var(--gold);
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.header h1 {
+  color: var(--marble);
+  margin-bottom: 1rem;
+}
+
+.headerSub {
+  color: var(--marble);
+  opacity: 0.85;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Culture Grid */
+.cultureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cultureItem {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.cultureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.cultureItem h3 {
+  margin-bottom: 0.5rem;
+  color: var(--imperial-purple);
+}
+
+.cultureItem p {
+  font-size: 0.92rem;
+  color: var(--muted-text);
+  line-height: 1.7;
+}
+
+/* Position Cards */
+.positionList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.positionCard {
+  background: white;
+  border: 1px solid var(--gold-light);
+  padding: 2rem;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.positionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.posType {
+  color: var(--muted-text);
+  font-size: 0.85rem;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+}
+
+.posPay {
+  background: var(--parchment);
+  border: 1px solid var(--gold-light);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--imperial-purple);
+  white-space: nowrap;
+}
+
+.posDesc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.posReqs h4 {
+  font-size: 0.9rem;
+  color: var(--imperial-purple);
+  margin-bottom: 0.5rem;
+}
+
+.posReqs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.posReqs ul li {
+  padding: 0.3rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.9rem;
+  color: var(--dark-text);
+}
+
+.posReqs ul li::before {
+  content: '\2694';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+/* Warning Box */
+.warningBox {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff5f5;
+  border: 2px solid var(--blood-red);
+  padding: 2rem;
+}
+
+.warningBox h3 {
+  margin-bottom: 1rem;
+}
+
+.warningBox p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cultureGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .positionHeader {
+    flex-direction: column;
+  }
+}

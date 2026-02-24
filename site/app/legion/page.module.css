@@ -1,0 +1,212 @@
+/* === LEGION PAGE === */
+
+.header {
+  background: linear-gradient(135deg, var(--blood-red) 0%, var(--imperial-purple-dark) 100%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.headerContent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.tag {
+  color: var(--gold);
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.header h1 {
+  color: var(--marble);
+  margin-bottom: 1rem;
+}
+
+.headerSub {
+  color: var(--marble);
+  opacity: 0.85;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Value Grid */
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.valueItem {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.valueIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.valueItem h3 {
+  margin-bottom: 0.5rem;
+  color: var(--blood-red);
+}
+
+.valueItem p {
+  font-size: 0.92rem;
+  color: var(--muted-text);
+  line-height: 1.7;
+}
+
+/* Caesar Quote */
+.corpMessage {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.caesarQuote {
+  background: white;
+  border-left: 4px solid var(--blood-red);
+  padding: 2rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.caesarAttrib {
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+.caesarSmall {
+  text-align: right;
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+/* Position Cards */
+.positionList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.positionCard {
+  background: white;
+  border: 1px solid var(--gold-light);
+  padding: 2rem;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  border-left: 4px solid var(--blood-red);
+}
+
+.positionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.posType {
+  color: var(--muted-text);
+  font-size: 0.85rem;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+}
+
+.posPay {
+  background: var(--parchment);
+  border: 1px solid var(--gold-light);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--blood-red);
+  white-space: nowrap;
+}
+
+.posDesc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.posReqs h4 {
+  font-size: 0.9rem;
+  color: var(--blood-red);
+  margin-bottom: 0.5rem;
+}
+
+.posReqs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.posReqs ul li {
+  padding: 0.3rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.9rem;
+  color: var(--dark-text);
+}
+
+.posReqs ul li::before {
+  content: '\2694';
+  position: absolute;
+  left: 0;
+  color: var(--blood-red);
+}
+
+/* Day in the Life Timeline */
+.timeline {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.timeItem {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gold-light);
+}
+
+.timeItem:last-child {
+  border-bottom: none;
+}
+
+.timeHour {
+  font-weight: bold;
+  color: var(--blood-red);
+  font-variant: small-caps;
+  font-size: 1.1rem;
+  min-width: 50px;
+}
+
+.timeDesc {
+  font-size: 0.92rem;
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .valueGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .positionHeader {
+    flex-direction: column;
+  }
+}

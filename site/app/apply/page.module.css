@@ -1,0 +1,280 @@
+/* === APPLY PAGE === */
+
+.header {
+  background: linear-gradient(135deg, var(--imperial-purple-dark), var(--blood-red));
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.headerContent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.tag {
+  color: var(--gold);
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.header h1 {
+  color: var(--marble);
+  margin-bottom: 1rem;
+}
+
+.headerSub {
+  color: var(--marble);
+  opacity: 0.85;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Form */
+.form {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.formSection {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gold-light);
+}
+
+.formSection:last-of-type {
+  border-bottom: none;
+}
+
+.formSection h2 {
+  color: var(--imperial-purple);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field {
+  margin-bottom: 1.2rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--dark-text);
+  margin-bottom: 0.4rem;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-family: Georgia, serif;
+  font-size: 0.9rem;
+  border: 1px solid var(--gold-light);
+  background: white;
+  color: var(--dark-text);
+  transition: border-color 0.2s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+/* Slider */
+.sliderWrap {
+  padding: 0.5rem 0;
+}
+
+.slider {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(to right, var(--gold-light), var(--blood-red));
+  outline: none;
+  border-radius: 4px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--imperial-purple);
+  border: 2px solid var(--gold);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--imperial-purple);
+  border: 2px solid var(--gold);
+  cursor: pointer;
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  margin-top: 0.3rem;
+}
+
+.sliderVal {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--imperial-purple);
+}
+
+.sliderNote {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--imperial-purple);
+}
+
+/* Checkboxes */
+.checkboxField {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+}
+
+.checkboxField input[type="checkbox"] {
+  margin-top: 0.3rem;
+  accent-color: var(--imperial-purple);
+  width: 16px;
+  height: 16px;
+}
+
+.checkboxField label {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--dark-text);
+}
+
+/* Terms */
+.termsBox {
+  background: var(--parchment);
+  border: 1px solid var(--gold-light);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.termsBox ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.termsBox li {
+  margin-bottom: 0.4rem;
+}
+
+/* Submit */
+.submitBtn {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.formDisclaimer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Success State */
+.successSection {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.successContent {
+  max-width: 600px;
+  text-align: center;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.successContent h1 {
+  color: var(--imperial-purple);
+  margin-bottom: 1rem;
+}
+
+.successMsg {
+  font-size: 1.05rem;
+  color: var(--dark-text);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.successDetails {
+  background: var(--parchment);
+  border: 1px solid var(--gold-light);
+  padding: 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.successDetails h3 {
+  color: var(--imperial-purple);
+  margin-bottom: 0.8rem;
+}
+
+.successDetails ol {
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.successSmall {
+  font-size: 0.8rem;
+  color: var(--muted-text);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
