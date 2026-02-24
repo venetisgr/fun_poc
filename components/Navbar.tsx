@@ -29,6 +29,7 @@ export default function Navbar() {
           <li><Link href="/macedon" onClick={() => setMenuOpen(false)}>The Phalanx</Link></li>
           <li><Link href="/legion" onClick={() => setMenuOpen(false)}>The Legion</Link></li>
           <li><Link href="/benefits" onClick={() => setMenuOpen(false)}>Benefits</Link></li>
+          <li><Link href="/donate" onClick={() => setMenuOpen(false)}>Donate</Link></li>
           <li><Link href="/faq" onClick={() => setMenuOpen(false)}>FAQ</Link></li>
           <li>
             <Link href="/apply" className={styles.applyBtn} onClick={() => setMenuOpen(false)}>
