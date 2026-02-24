@@ -8,10 +8,9 @@ Gloria Aeterna Recruiting — a satirical ancient military recruiting website fo
 
 ## Commands
 
-All commands run from the `site/` directory:
+All commands run from the repo root:
 
 ```bash
-cd site
 npm run dev      # Development server with hot reload
 npm run build    # Production build (static generation)
 npm run start    # Serve production build locally
@@ -69,7 +68,7 @@ Position listings, FAQ items, comparison table rows, and reviews are defined as 
 
 ## Deployment
 
-Vercel deployment with root directory set to `site/`. All pages are SSG — no server functions needed.
+Vercel auto-detects Next.js from the repo root. All pages are SSG — no server functions or environment variables needed.
 
 ## Tone
 

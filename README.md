@@ -23,7 +23,6 @@ A satirical recruiting website for **Macedonian phalanxes** heading to Persia an
 ## Getting Started
 
 ```bash
-cd site
 npm install
 npm run dev
 ```
@@ -33,8 +32,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Deploy on Vercel
 
 1. Import this repository on [vercel.com](https://vercel.com)
-2. Set **Root Directory** to `site`
-3. Deploy
+2. Deploy (Next.js auto-detected from repo root)
 
 All pages are statically generated — no server functions or environment variables needed.
 
@@ -45,16 +43,15 @@ All pages are statically generated — no server functions or environment variab
 ├── architecture_components_roadmap.md # Architecture & design docs
 ├── log.md                             # Development log
 ├── todo.md                            # Task tracker
-└── site/                              # Next.js application
-    ├── app/                           # Pages (App Router)
-    │   ├── layout.tsx                 # Root layout (navbar, ticker, footer)
-    │   ├── page.tsx                   # Homepage
-    │   ├── macedon/                   # Phalanx recruiting
-    │   ├── legion/                    # Legion recruiting
-    │   ├── benefits/                  # Compensation comparison
-    │   ├── apply/                     # Application form
-    │   └── faq/                       # FAQ
-    └── components/                    # Navbar, Footer
+├── app/                               # Pages (App Router)
+│   ├── layout.tsx                     # Root layout (navbar, ticker, footer)
+│   ├── page.tsx                       # Homepage
+│   ├── macedon/                       # Phalanx recruiting
+│   ├── legion/                        # Legion recruiting
+│   ├── benefits/                      # Compensation comparison
+│   ├── apply/                         # Application form
+│   └── faq/                           # FAQ
+└── components/                        # Navbar, Footer
 ```
 
 ## Legal Disclaimer
